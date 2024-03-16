@@ -1,5 +1,12 @@
 
-\documentclass[a4paper,20pt]{article}
+%-------------------------
+% Resume in Latex
+% Author : Jake Gutierrez
+% Based off of: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+
+\documentclass[a4paper,24pt]{article}
 
 \usepackage{latexsym}
 \usepackage[empty]{fullpage}
@@ -109,6 +116,7 @@
 %-------------------------------------------
 %%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
+
 \begin{document}
 
 %----------HEADING----------
@@ -130,8 +138,8 @@
 \section{Education}
   \resumeSubHeadingListStart
     \resumeSubheading
-      {KIET Group of Institutions}{Sept 2020 - Present}
-      {Bachelor of Technology in Computer Science and Engineering (86\%)}{Ghaziabad, Uttar Pradesh, India}
+      {KIET Group of Institutions}{September 2020 - Present}
+      {Bachelor of Technology in Computer Science and Engineering (82\%)}{Ghaziabad, Uttar Pradesh, India}
   \resumeSubHeadingListEnd
   \vspace{-5pt}
   \resumeSubHeadingListStart
@@ -149,46 +157,48 @@
 %-----------EXPERIENCE-----------
 \section{Experience}
   \resumeSubHeadingListStart
+
     \resumeSubheading
-          {CodeForGovTech (C4GT) - Samagra Governance }{June 2023 -- Present}
-          {Open Source Contributor}{Online}
-          \resumeItemListStart
-            \resumeItem{Implement and enhance code security + container image vulnerability scanning scan to identify and mitigate vulnerabilities, strengthening software security. Fixed the bugs, vulnerabilities and made code upto 90\% secure.}
-            \resumeItem{Set up a DevSecOps pipeline for secure code delivery and deployment. Sped up security analysis and testing (earlier, manual) by upto 3x less efforts and hours.}
-        \resumeItemListEnd
-  
-    \resumeSubheading
-      {Cyethack Solutions }{Sept 2022 -- Present}
+      {Cyethack Solutions }{September 2022 -- Present}
       {Backend, DevOps Engineer}{Online}
       \resumeItemListStart
-        \resumeItem{Configured a robust CI/CD pipeline utilizing Github Actions to facilitate automatic deployment of the product across Amazon AWS instances. Optimized the time spent in delivery and deployment by a factor of 3x. }
-        \resumeItem{Orchestrated the containerization process of the project to ensure seamless deployment using Docker, optimizing its portability and scalability. Resulted in a significant reduction in deployment time - 40\% in project efficiency, increased resource utilization.}
-        \resumeItem{Successfully configured and managed AWS infrastructure, including deployment, testing, and comprehensive unit and integration testing with Jest framework. Led to improved reliability, ensuring a 30\% reduction in deployment errors.}
+        \resumeItem{Engineered a robust CI/CD pipeline utilizing Github Actions to facilitate automatic deployment of the product across Amazon AWS instances. Optimized the time spent in delivery and deployment by a factor of 3x. }
+        \resumeItem{Orchestrated the containerization process of the project to ensure seamless deployment using Docker, optimizing its portability and scalability. Resulted in a significant reduction in deployment time - 40\% in project efficiency, increased resource utilization. }
+        \resumeItem{Optimized and managed AWS infrastructure, including deployment, testing, and comprehensive unit and integration testing with Jest framework. Facilitated improved reliability, ensuring a 30\% reduction in deployment errors.}
     \resumeItemListEnd
+
+
+    \resumeSubheading
+          {CodeForGovTech (C4GT) - Samagra Governance }{June 2023 -- August 2023}
+          {Open Source Contributor}{Online}
+          \resumeItemListStart
+            \resumeItem{Implement and enhance code security + container image vulnerability scanning scan to identify and mitigate vulnerabilities, strengthening software security. Resolved the bugs, vulnerabilities and made code upto 90\% secure.}
+            \resumeItem{Oraganize a DevSecOps pipeline for secure code delivery and deployment. Accelerated security analysis and testing (earlier, manual) by upto 3x less efforts and hours.}
+        \resumeItemListEnd
+
     
     \resumeSubheading
-      {C3i Hub, Indian Institute of Technology, Kanpur }{July 2022 -- Oct 2022}
+      {C3i Hub, Indian Institute of Technology, Kanpur }{July 2022 -- October 2022}
       {Summer Security Research Intern}{Kanpur, India}
       \resumeItemListStart
-        \resumeItem{Set up the server with Elasticsearch, Kibana and Logstash, and set up Apache Kafka to be used with Logstash. }
-        \resumeItem{Scraped tweets based on keywords, identified sources and real time from twitter (using tweepy). Also collected data from telegram using telethon - fetched live messages, implemented filtering based on keywords, channel search, extracting channel users info.}
-        \resumeItem{Analysis of the collected information related to recognized illegal content using Natural Language Processing. }
-        \resumeItem{Maintained project documentation and the GitHub repository. }
+        \resumeItem{Configured infrastructure with Elasticsearch, Kibana and Logstash. Resulted in 20\% increase in data-driven decision-making efficiency; managed project documentation and repository for easy continuity and accessibility. }
+        \resumeItem{Scraped, filtered - tweets and Telegram posts based on keywords, identified sources in real time from Twitter (using tweepy) and Telegram (using telethon) streams. Curated and processed over 10,000 tweets/posts per day.}
+        \resumeItem{Analysed/categorized the collected information related to illegal content using LLMs (large language models) - with upto 93\% precision. }
     \resumeItemListEnd
     
-    \resumeSubheading
-      {GirlScript Foundation}{Apr 2022 -- July 2022}
-      {Organiser, Web3 Camp}{Online}
-      \resumeItemListStart
-        \resumeItem{Successfully managed and conducted the Web3 camp for Kanpur region, with over 200+ registrations.}
-    \resumeItemListEnd
+    % \resumeSubheading
+    %   {GirlScript Foundation}{Apr 2022 -- July 2022}
+    %   {Organiser, Web3 Camp}{Online}
+    %   \resumeItemListStart
+    %     \resumeItem{Successfully managed and conducted the Web3 camp for Kanpur region, with over 200+ registrations.}
+    % \resumeItemListEnd
     
-    \resumeSubheading
-      {GirlScript Foundation}{ Dec 2021 -- March 2022}
-      {Campus Ambassador, Summer of Code}{Online}
-      \resumeItemListStart
-        \resumeItem{Spread awareness about Open Source among the students.}
-    \resumeItemListEnd
+    % \resumeSubheading
+    %   {GirlScript Foundation}{ Dec 2021 -- March 2022}
+    %   {Campus Ambassador, Summer of Code}{Online}
+    %   \resumeItemListStart
+    %     \resumeItem{Spread awareness about Open Source among the students.}
+    % \resumeItemListEnd
     
     % \resumeSubheading
     %   {Ek Prayas}{ Dec 2021 -- Present}
@@ -207,23 +217,21 @@
     \resumeProjectHeading
           {\textbf{Py-LMDC} $|$ \emph{Python} $|$ {github.com/godofgeeks23/python-LMDC}}{temp}
           \resumeItemListStart
-            \resumeItem{A ML based Linux Malware Detection and Classification
-System built using Python.}
+            \resumeItem{A ML based Linux Malware Detection and Classification System built using Python. Accurate upto 97\%}
           \resumeItemListEnd
     \vspace{-13pt}
       \resumeProjectHeading
           {\textbf{Twitter Data Miner} $|$ \emph{Python, Elasticsearch, Kibana, Logstash}  $|$ {github.com/godofgeeks23/twitter-data-miner}}{temp}
           \resumeItemListStart
-            \resumeItem{A tool to scrape live Twitter data using Python and analyzing it using Elastic stack.}
+            \resumeItem{A tool to scrape live Twitter data using Python and analyzing it using Elastic stack. Highly performant (capable of ingesting 3k documents/sec)}
           \resumeItemListEnd
     \vspace{-13pt}
       \resumeProjectHeading
           {\textbf{Azure SIEM} $|$ \emph{Powershell, Azure, Azure Sentinel}  $|$ {github.com/godofgeeks23/azureSIEM}}{temp}
           \resumeItemListStart
-            \resumeItem{Used custom PowerShell script to extract metadata from Windows Event Viewer to be forwarded to third party API in order to derive geolocation data}
-            \resumeItem{Configured Log Analytics Workspace in Azure to ingest custom logs containing geographic information (latitude, longitude, state/province, and country).}
-            \resumeItem{Configured Custom Fields in Log Analytics Workspace with the intent of mapping geo data in Azure Sentinel.}
-            \resumeItem{Configured Azure Sentinel (Microsoft's cloud SIEM) workbook to display global attack data (RDP brute force) on world map according to physical location and magnitude of attacks.}
+            \resumeItem{Used custom PowerShell script to extract metadata from Windows Event Viewer to be forwarded to third party API in order to derive geolocation data.}
+            \resumeItem{Implemented Log Analytics Workspace in Azure to ingest custom logs containing geographic information (latitude, longitude, state/province, and country) in bulk (1.5k entries/second).}
+            \resumeItem{Configured Azure Sentinel (Microsoft's cloud SIEM) workbook to display global attack data (RDP brute force) on World map according to physical location and magnitude of attacks. Observed thousands of attack attempts within 2 hours. }
           \resumeItemListEnd
     \resumeSubHeadingListEnd
 \vspace{-15pt}
@@ -233,11 +241,11 @@ System built using Python.}
 \section{Achievements}
  \begin{itemize}[leftmargin=0.15in, label={}]
     \resumeItemListStart
-        \resumeItem{Got an \textbf{internship offer} from \textbf{Airtel} for \textbf{Security intern} role.}
+        \resumeItem{Got an \textbf{internship offer} from \textbf{Airtel} for \textbf{Security intern} role. Among 2 students from College. }
         \resumeItem{Secured \textbf{2nd Rank} in AlanAI Hacks '22 Hackathon.}
         \resumeItem{Secured a place among HCL-IITK 2021 \textbf{Finalists} (in \textbf{top 0.00092\%} teams.)}
         \resumeItem{\textbf{Finalists (top 5)} of Shaastra Web Crawler Hackathon - IIT Madras.}
-        \resumeItem{\textbf{Won} the Begig HacXmas Hackathon, 2022.}
+        \resumeItem{\textbf{Won 1st Prize} for Begig HacXmas Hackathon, 2022.}
         \resumeItem{\textbf{Finalist} of the Egnite Ideathon '22.}
         % \resumeItem{Involved in student developer communities like \textbf{MLH (Major League Hacking)} and \textbf{Community Classroom}.}
       \resumeItemListEnd
@@ -249,16 +257,14 @@ System built using Python.}
 \section{Technical Skills}
  \begin{itemize}[leftmargin=0.15in, label={}]
     \small{\item{
-     \textbf{Languages}{: C++, Python, JavaScript, Java, HTML/CSS, Bash, SQL} \\
-     \textbf{Frameworks}{: Express, React, Node, MongoDB, Elasticsearch, BootStrap, TailWind, Kibana, Logstash, Jest } \\
-     \textbf{Developer Tools}{: Git, Linux, Visual Studio Code, Figma, Docker } \\
-     \textbf{Libraries}{: pandas, NumPy, Matplotlib, OpenCV} \\
+     \textbf{Languages/Frameworks}{: C++, Python, JavaScript - Express, React, Node, HTML/CSS (Bootstrap, Tailwind), Jest, SQL, Mongodb, ELK (Elasticsearch, Kibana, Logstash) } \\
+     \textbf{Cloud and Dev Tools/Technologies}{: Git, Linux, Bash, Docker, Kubernetes, Jenkins, AWS, Azure, Nginx, VS Code } \\
+     \textbf{Others}{: Figma, Networking, Automation, Web security } \\
      % \textbf{Theoretical Concepts}{: Data Structures and Algorithms, DMBS, Operating System, Computer Networks } \\
     }}
  \end{itemize}
  \vspace{-16pt}
 
- 
 % %
 % %-----------Miscellaneous-----------
 % \section{Miscellaneous}
